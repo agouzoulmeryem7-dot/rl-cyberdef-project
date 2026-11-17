@@ -1,0 +1,24 @@
+kind,name,metric,mean,ci_low,ci_high,n
+policy,random,return,-243.16000000000003,-285.90762500000005,-199.00500000000002,20
+policy,random,final_infected_frac,0.23333333333333334,0.14583333333333334,0.3333333333333333,20
+policy,random,peak_infected_frac,0.3958333333333333,0.3,0.48760416666666523,20
+policy,random,availability,0.6226666666666667,0.5919979166666667,0.6587500000000001,20
+policy,random,healthy_unavailable_mean,3.257,2.7969749999999998,3.7450249999999996,20
+policy,random,healthy_isolations,7.75,6.6,9.001249999999981,20
+policy,random,healthy_restorations,11.95,10.55,13.35,20
+policy,dqn,return,-235.325,-282.4077500000001,-192.6220000000001,20
+policy,dqn,final_infected_frac,0.31249999999999994,0.2208333333333333,0.4166666666666667,20
+policy,dqn,peak_infected_frac,0.3666666666666667,0.28739583333333335,0.4624999999999999,20
+policy,dqn,availability,0.714,0.6730833333333335,0.75066875,20
+policy,dqn,healthy_unavailable_mean,2.803,2.3779749999999997,3.316,20
+policy,dqn,healthy_isolations,3.3,2.65,4.05,20
+policy,dqn,healthy_restorations,16.6,11.7,21.75124999999998,20
+policy,restore_if_alert,return,-21.800000000000008,-24.419999999999998,-19.67000000000001,20
+policy,restore_if_alert,final_infected_frac,0.0,0.0,0.0,20
+policy,restore_if_alert,peak_infected_frac,0.10416666666666666,0.0875,0.12083333333333332,20
+policy,restore_if_alert,availability,0.9591666666666665,0.9569999999999996,0.9612499999999999,20
+policy,restore_if_alert,healthy_unavailable_mean,0.45600000000000007,0.43200000000000005,0.481,20
+policy,restore_if_alert,healthy_isolations,0.0,0.0,0.0,20
+policy,restore_if_alert,healthy_restorations,22.8,21.6,24.05,20
+paired_diff,dqn - random,return,7.83500000000001,-40.41150000000003,58.30762499999999,20
+paired_diff,dqn - restore_if_alert,return,-213.52500000000003,-259.25525,-171.83,20

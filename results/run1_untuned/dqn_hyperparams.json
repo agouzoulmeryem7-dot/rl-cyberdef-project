@@ -1,0 +1,42 @@
+{
+  "dqn": {
+    "hidden_sizes": [
+      128,
+      128
+    ],
+    "gamma": 0.99,
+    "lr": 0.001,
+    "batch_size": 64,
+    "buffer_size": 50000,
+    "learning_starts": 1000,
+    "target_update_every": 500,
+    "eps_start": 1.0,
+    "eps_end": 0.05,
+    "eps_decay_steps": 40000,
+    "grad_clip": 10.0,
+    "reward_scale": 0.1,
+    "n_episodes": 3000,
+    "window": 50
+  },
+  "env": {
+    "n_hosts": 12,
+    "horizon": 50,
+    "beta": 0.25,
+    "patch_factor": 0.2,
+    "n_initial_infected": 1,
+    "fp_rate": 0.05,
+    "fn_rate": 0.15,
+    "c_infected": 1.0,
+    "c_unavailable": 0.3,
+    "c_restore": 0.5,
+    "c_patch": 0.2,
+    "ema_decay": 0.5,
+    "topo_seed": 0
+  },
+  "noise": "medium",
+  "seed": 0,
+  "train_seconds": 321.5,
+  "torch": "2.15.0+cu132",
+  "loss": "Huber (smooth_l1)",
+  "optimizer": "Adam"
+}

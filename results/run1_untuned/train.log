@@ -1,0 +1,44 @@
+Entraînement : bruit=medium seed=0 épisodes=3000
+ep   100 | reward   -178.9 | moy50   -266.8 | eps 0.881 | loss 0.0104
+ep   200 | reward   -276.0 | moy50   -244.7 | eps 0.763 | loss 0.0549
+ep   300 | reward   -104.9 | moy50   -229.0 | eps 0.644 | loss 0.1593
+ep   400 | reward   -146.4 | moy50   -206.4 | eps 0.525 | loss 0.2611
+ep   500 | reward   -131.9 | moy50   -201.5 | eps 0.406 | loss 0.3612
+ep   600 | reward   -360.3 | moy50   -250.4 | eps 0.288 | loss 0.4594
+ep   700 | reward   -276.8 | moy50   -283.2 | eps 0.169 | loss 0.5514
+ep   800 | reward   -251.1 | moy50   -269.7 | eps 0.050 | loss 0.6255
+ep   900 | reward   -166.0 | moy50   -237.8 | eps 0.050 | loss 0.6982
+ep  1000 | reward   -259.9 | moy50   -225.2 | eps 0.050 | loss 0.7404
+ep  1100 | reward   -471.8 | moy50   -266.8 | eps 0.050 | loss 0.8016
+ep  1200 | reward    -36.4 | moy50   -219.7 | eps 0.050 | loss 0.8091
+ep  1300 | reward   -117.1 | moy50   -235.5 | eps 0.050 | loss 0.9444
+ep  1400 | reward   -290.4 | moy50   -264.1 | eps 0.050 | loss 0.9193
+ep  1500 | reward   -275.9 | moy50   -232.5 | eps 0.050 | loss 1.0358
+ep  1600 | reward   -302.9 | moy50   -223.6 | eps 0.050 | loss 1.0921
+ep  1700 | reward    -71.9 | moy50   -263.4 | eps 0.050 | loss 1.1775
+ep  1800 | reward   -265.3 | moy50   -277.6 | eps 0.050 | loss 1.3379
+ep  1900 | reward   -381.7 | moy50   -214.9 | eps 0.050 | loss 1.4607
+ep  2000 | reward   -162.0 | moy50   -208.2 | eps 0.050 | loss 1.3955
+ep  2100 | reward   -326.4 | moy50   -234.7 | eps 0.050 | loss 1.3317
+ep  2200 | reward   -251.5 | moy50   -308.9 | eps 0.050 | loss 1.5162
+ep  2300 | reward   -489.9 | moy50   -273.3 | eps 0.050 | loss 1.7599
+ep  2400 | reward   -122.9 | moy50   -240.4 | eps 0.050 | loss 1.9551
+ep  2500 | reward   -222.3 | moy50   -235.7 | eps 0.050 | loss 1.9735
+ep  2600 | reward   -400.4 | moy50   -224.4 | eps 0.050 | loss 2.1269
+ep  2700 | reward   -487.4 | moy50   -274.9 | eps 0.050 | loss 2.1909
+ep  2800 | reward   -280.1 | moy50   -270.3 | eps 0.050 | loss 2.5645
+ep  2900 | reward   -105.7 | moy50   -208.2 | eps 0.050 | loss 2.5120
+ep  3000 | reward    -97.7 | moy50   -228.1 | eps 0.050 | loss 2.4939
+Entraînement terminé en 321s -> results/dqn_training.csv
+
+ÉVALUATION DQN (ε=0, 100 épisodes, graines 100000+) -> results/dqn_eval.csv
+  return                   -206.601  IC95% [-230.475, -183.232]
+  final_infected_frac         0.333  IC95% [0.279, 0.388]
+  peak_infected_frac          0.360  IC95% [0.302, 0.418]
+  availability                0.794  IC95% [0.779, 0.808]
+  healthy_unavailable_mean    1.886  IC95% [1.715, 2.053]
+  healthy_isolations          1.940  IC95% [1.770, 2.110]
+  healthy_restorations       10.200  IC95% [7.710, 12.880]
+  (référence random, return moyen : -249.46)
+  (référence restore_if_alert, return moyen : -25.08)
+Courbe -> results/dqn_learning_curve.png

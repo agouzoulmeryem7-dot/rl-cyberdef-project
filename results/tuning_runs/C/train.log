@@ -1,0 +1,18 @@
+Entraînement : bruit=medium seed=0 épisodes=1000
+ep   250 | reward   -258.5 | moy50   -236.1 | eps 0.406 | loss 0.0450
+ep   500 | reward   -106.5 | moy50   -196.4 | eps 0.050 | loss 0.0485
+ep   750 | reward   -375.2 | moy50   -147.1 | eps 0.050 | loss 0.0503
+ep  1000 | reward    -41.6 | moy50   -117.0 | eps 0.050 | loss 0.0459
+Entraînement terminé en 173s -> /tmp/claude-0/-home-claude/c4058ab0-475c-51a2-a156-20759a06ed1a/scratchpad/tune/C/dqn_training.csv
+
+ÉVALUATION DQN (ε=0, 50 épisodes, graines 100000+) -> /tmp/claude-0/-home-claude/c4058ab0-475c-51a2-a156-20759a06ed1a/scratchpad/tune/C/dqn_eval.csv
+  return                   -114.606  IC95% [-145.864, -85.316]
+  final_infected_frac         0.127  IC95% [0.072, 0.190]
+  peak_infected_frac          0.270  IC95% [0.210, 0.337]
+  availability                0.872  IC95% [0.854, 0.889]
+  healthy_unavailable_mean    1.272  IC95% [1.072, 1.475]
+  healthy_isolations          2.440  IC95% [1.920, 2.960]
+  healthy_restorations       17.620  IC95% [15.180, 20.140]
+  (référence random, return moyen : -249.46)
+  (référence restore_if_alert, return moyen : -25.08)
+Courbe -> /tmp/claude-0/-home-claude/c4058ab0-475c-51a2-a156-20759a06ed1a/scratchpad/tune/C/dqn_learning_curve.png

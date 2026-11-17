@@ -1,0 +1,20 @@
+Entraînement : bruit=medium seed=3 épisodes=3000
+ep   500 | reward    -81.5 | moy50   -195.6 | eps 0.406 | loss 0.0367
+ep  1000 | reward    -22.4 | moy50   -117.3 | eps 0.050 | loss 0.0311
+ep  1500 | reward    -44.9 | moy50    -44.5 | eps 0.050 | loss 0.0204
+ep  2000 | reward     -5.4 | moy50    -42.6 | eps 0.050 | loss 0.0147
+ep  2500 | reward     -7.4 | moy50    -54.4 | eps 0.050 | loss 0.0137
+ep  3000 | reward     -9.7 | moy50    -47.4 | eps 0.050 | loss 0.0110
+Entraînement terminé en 468s -> results/multiseed/seed_3/dqn_training.csv
+
+ÉVALUATION DQN (ε=0, 100 épisodes, graines 100000+) -> results/multiseed/seed_3/dqn_eval.csv
+  return                    -39.219  IC95% [-56.952, -23.075]
+  final_infected_frac         0.043  IC95% [0.013, 0.076]
+  peak_infected_frac          0.158  IC95% [0.123, 0.194]
+  availability                0.965  IC95% [0.954, 0.974]
+  healthy_unavailable_mean    0.291  IC95% [0.210, 0.384]
+  healthy_isolations          0.650  IC95% [0.460, 0.860]
+  healthy_restorations        5.180  IC95% [4.240, 6.190]
+  (référence random, return moyen : -249.46)
+  (référence restore_if_alert, return moyen : -25.08)
+Courbe -> results/multiseed/seed_3/dqn_learning_curve.png
